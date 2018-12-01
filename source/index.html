@@ -4,38 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pink - Главная</title>
+  <link type="text/css" rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
     <header class="page-header">
+      <div class="main-nav__wrapper">
       <div class="page-header__wrapper">
-        <img class="page-header__logo" />
+        <include class="page-header__logo" src="build/img/logotype-white-mobile.svg"></include>
         <button class="main-nav__toggle"
           type="button" name="main-nav__toggle"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">Главная</li>
-          <li class="site-list__item">Фотографии</li>
-          <li class="site-list__item">Конкурс</li>
-          <li class="site-list__item">HTML Academy</li>
+          <li class="site-list__item"><a href="#" class="main-nav__link">Главная</a></li>
+          <li class="site-list__item"><a href="#" class="main-nav__link">Фотографии</a></li>
+          <li class="site-list__item"><a href="#" class="main-nav__link">Конкурс</a></li>
+          <li class="site-list__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
         </ul>
       </nav>
-    </header>
-
-    <main>
-      <h1 class="visually-hidden">Приложение Pink для того, чтобы делиться вашим
-        взглядом на мир!</h1>
-
-      <section class="intro">
-        <div class="intro__wrapper">
-          <div class="intro__image">
-            <img class="intro__image-iphone" />
-            <img class="intro__image-pink" />
-          </div>
+      </div>
+      <section class="intro">        
+          <div class="intro__mock"></div>
           <section class="download">
             <h2 class="visually-hidden">Здесь вы можете скачать наше приложение</h2>
             <p class="download__slogan">
-              Взглядине на жизнь ярче!
+              Взгляните на жизнь иначе!
             </p>
             <a href="#" class="download__link">Скачать приложение</a>
             <ul class="download__systems-logos site-list">
@@ -52,10 +45,14 @@
             <p class="download__accessability">
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
             </p>
-          </section>
-        </div>
+          </section>        
       </section>
+    </header>
 
+    <main>
+      <h1 class="visually-hidden">Приложение Pink для того, чтобы делиться вашим
+        взглядом на мир!</h1>
+    
       <section class="advantages">
         <h2 class="visually-hidden">Основные преимущества приложения</h2>
         <div class="advantages__slogan-wrapper">
@@ -87,7 +84,7 @@
           <div class="advantages__pnone-wrapper">
             <img src="#" alt="Телефон с серым городом" class="advantages__phone">
             <img src="#" alt="Телефон с розовым городом" class="advantages__phone">
-            <img src="#" alt="Телефон с улыбкой" class="advantages__phone">
+            <img src="#" alt="Телефон с улыбкой" class="advantages__phone advantages__phone--smile">
           </div>
         </div>
         <div class="advantages__effect">

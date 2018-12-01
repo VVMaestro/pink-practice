@@ -1,0 +1,35 @@
+.main-nav {
+  color: #fff;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  
+  background-color: rgba(30, 42, 52, 0.3);
+}
+
+.main-nav__link {
+  display: block;
+  min-height: 64px;
+  width: 100%;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-width) {
+  
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__wrapper {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,30 @@
+.intro {
+    min-height: 665px;
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0 20px;
+}
+
+.intro__mock {
+    min-height: 395px;
+    outline: 2px solid blue;
+}
+
+@media (min-width: @tablet-width) {
+    .intro {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        min-height: 620px;
+    }
+
+    .intro__mock {
+        min-width: 300px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .intro__mock {
+        min-width: 570px;
+    }
+}
