@@ -1,0 +1,28 @@
+.page-footer {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .page-footer {
+        display: block;
+        min-height: 127px;
+    }
+
+    .page-footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 620px;
+        outline: 2px solid grey;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-footer {
+        min-height: 197px;
+    }
+
+    .page-footer__wrapper {
+        width: 960px;
+    }
+}

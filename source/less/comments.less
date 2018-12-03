@@ -1,0 +1,23 @@
+.comments {
+    padding: 0 20px;
+    outline: 2px solid pink;
+}
+
+.comments__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments__user-info {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .comments__item {
+        flex-direction: column-reverse;
+    }
+
+    .comments__user-info {
+        display: block;
+    }
+}

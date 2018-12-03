@@ -14,13 +14,17 @@
 
 .advantages__phone {
     display: none;
-    min-height: 547px;
-    width: 268px;
+    height: 277px;
+    width: 158px;
     margin: 0 auto;
     outline: 2px solid green;
     &--smile {
         display: block;
     }
+}
+
+.advantages__effect {
+    display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,6 +36,15 @@
     .advantages__list {
         width: 310px;
     }
+
+    .advantages__phone {
+        height: 482px;
+        width: 268px;
+    }
+
+    .advantages__effect {
+        display: block;
+    }
 }
 
 @media (min-width: @desktop-width) {
@@ -42,6 +55,8 @@
     
     .advantages__phone {
         display: block;
+        height: 305px;
+        width: 186px;
     }
 
     .advantages__wrapper {
