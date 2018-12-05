@@ -2,24 +2,60 @@
     min-height: 665px;
     display: flex;
     flex-direction: column;
-    
-    padding: 0 20px;
 }
 
 .intro__mock {
-    min-height: 395px;
-    outline: 2px solid blue;
+    min-height: 462px;
+    
+    background-color: #1d2631;
+    background-image: 
+        url("../img/iphone-6.png"),
+        url("../img/page-header-back.png");
+    background-repeat: 
+        no-repeat,
+        no-repeat;
+    background-size: 
+        auto 315px,
+        auto 550px;
+    background-position: 
+        left -175px bottom -30px,
+        center bottom -25px;
+}
+
+@media (max-width: @only-portable-width) {
+    .main-nav--opened {
+        .intro__mock {
+            min-height: 462px - 64px;
+        }
+    }
 }
 
 @media (min-width: @tablet-width) {
     .intro {
         flex-direction: row-reverse;
-        justify-content: space-between;
-        min-height: 620px;
+        justify-content: center;
+        align-items: center;
+        min-height: 730px;
+
+        background-color: #1d2631;
+        background-image: 
+            url("../img/iphone-6.png"),
+            url("../img/page-header-back.png");
+        background-repeat: 
+            no-repeat,
+            no-repeat;
+        background-size: 
+            auto 545px,
+            auto;
+        background-position: 
+            center bottom,
+            center top -120px;
     }
 
     .intro__mock {
         min-width: 300px;
+        background-image: none;
+        background-color: transparent;
     }
 }
 

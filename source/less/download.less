@@ -1,9 +1,69 @@
 .download {
     min-width: 280px;
+    padding: 25px 20px;
+
+    color: #ffffff;
+    background-color: #1d2631;
+}
+
+.download__slogan {
+    display: none;
+}
+
+.download__link {
+    display: block;
+    min-height: 55px;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 15px 0;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+
+    border: solid 3px #ffffff;
+    border-radius: 27.5px;
+}
+
+.download__systems-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin: 0 auto;
+    margin-top: 32px;
+    width: 205px;
+}
+
+.download__accessability {
+    margin: 0 auto;
+    margin-top: 25px;
+    padding: 0;
+    width: 240px;
+    text-align: center;
 }
 
 @media (min-width: @tablet-width) {
     .download {
         min-width: 300px;
+        margin-top: 55px;
+        background-color: transparent;
+    }
+
+    .download__slogan {
+        display: block;
+
+        margin: 0 auto;
+        margin-bottom: 35px;
+        width: 300px;
+
+        font-size: 40px;
+        line-height: 46px;
+        font-weight: 100;
+        text-align: center;
     }
 }
