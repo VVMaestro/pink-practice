@@ -21,6 +21,9 @@
 
 .main-nav__item a {
   display: block;
+
+  position: relative;
+
   min-height: 64px;
   box-sizing: border-box;
   padding-top: 15px;
@@ -29,13 +32,25 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  color: #fff;
+  color: #ffffff;
 
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
   background-color: #283645;
 
   cursor: pointer;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:focus {
+    color: #d22856;   
+  }
+
+  &:active {
+    color: fade(#d22856, 30);
+  }
 }
 
 .main-nav__list {
@@ -76,11 +91,53 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav__switch {
+    display: none; 
+  }
+
   .main-nav__list {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 620px;
   }
 
   .main-nav {
     flex-direction: row;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    min-height: 110px;
+    width: 940px;
+  }
+
+  .main-nav__item a {
+    border: none;
+    background-color: transparent;
+
+      &:not([href])::after {
+      content: "";
+
+      display: block;
+      
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 2px;
+
+      background-color: #ffffff;
+    }
+
+      &:active {
+      color: fade(#ffffff, 30);
+    }
   }
 }

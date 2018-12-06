@@ -27,6 +27,20 @@
 
     border: solid 3px #ffffff;
     border-radius: 27.5px;
+
+    &:hover {
+        color: #d22856;
+        background-color: #ffffff;
+    }
+
+    &:focus {
+        color: #d22856;
+        background-color: #ffffff;
+    }
+
+    &:active {
+        color: fade(#d22856, 30);
+    }
 }
 
 .download__systems-logos {
@@ -44,14 +58,20 @@
     margin-top: 25px;
     padding: 0;
     width: 240px;
+
+    font-weight: 100;
     text-align: center;
 }
 
 @media (min-width: @tablet-width) {
     .download {
-        min-width: 300px;
-        margin-top: 55px;
+        width: 300px;
+        margin-top: 110px;
         background-color: transparent;
+    }
+
+    .download__link {
+        width: 100%;
     }
 
     .download__slogan {
@@ -65,5 +85,27 @@
         line-height: 46px;
         font-weight: 100;
         text-align: center;
+    }
+
+    .download__systems-logos {
+        margin-top: 46px;
+    }
+
+    .download__accessability {
+        width: 100%;
+        margin-top: 40px;
+
+        font-size: 18px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .download {
+        // margin: 0;
+    }
+
+    .download__slogan {
+        font-size: 50px;
+        line-height: 52px;
     }
 }

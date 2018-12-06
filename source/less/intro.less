@@ -22,10 +22,18 @@
         center bottom -25px;
 }
 
-@media (max-width: @only-portable-width) {
+@media (max-width: @only-mobile-width) {
     .main-nav--opened {
         .intro__mock {
-            min-height: 462px - 64px;
+            margin-top: -64px;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) and (max-width: @only-portable-width) {
+    .main-nav--opened {
+        .intro {
+            margin-top: -110px;
         }
     }
 }
@@ -60,6 +68,14 @@
 }
 
 @media (min-width: @desktop-width) {
+    .intro {
+        min-height: 500px;        
+        margin-right: 20px;
+
+        background-image: none;
+        background-color: transparent;
+    }
+
     .intro__mock {
         min-width: 570px;
     }
