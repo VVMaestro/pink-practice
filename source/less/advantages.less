@@ -1,10 +1,8 @@
 .advantages {
     padding: 0 20px;
-}
 
-.advantages__slogan {
-    display: flex;
-    justify-content: center;
+    background-image: linear-gradient(353deg, #f2f2f2 0%, #f2f2f2 75%,
+     #ffffff 75%, #ffffff 100%);
 }
 
 .advantages__wrapper {
@@ -14,13 +12,55 @@
 
 .advantages__phone {
     display: none;
-    height: 277px;
-    width: 158px;
+
+    height: 250px;
+    width: 140px;
     margin: 0 auto;
-    outline: 2px solid green;
+    padding: 35px 10px 0px 10px;
+
+    background-image: url("../img/Iphone.png");
+    background-position: 0 0;
+    background-size: calc(140px + 2*10px) calc(250px + 35px + 38px);
+    background-repeat: no-repeat;
     &--smile {
         display: block;
     }
+}
+
+.advantages__slogan-wrapper {
+    box-sizing: border-box;
+    padding-top: 45px;
+    min-height: 300px;
+
+    font-size: 24px;
+    font-weight: 100;
+
+    & :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.advantages__slogan {
+    margin: 0;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.advantages__list :last-child {
+    margin-bottom: 0;
+}
+
+.advantages__item {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.advantages__item h3 {
+    margin: 0;
+    margin-bottom: 15px;
+    
+    text-align: center;
+    font-size: 18px;
 }
 
 .advantages__effect {
@@ -28,18 +68,51 @@
 }
 
 @media (min-width: @tablet-width) {
+    .advantages {
+        background-image: linear-gradient(353deg, #f2f2f2 0%, #f2f2f2 69%,
+     #ffffff 69%, #ffffff 100%);
+    }
+
     .advantages__wrapper {
         flex-direction: row-reverse;
         justify-content: center;
+        align-items: center;
+    }
+
+    .advantages__slogan-wrapper {
+        min-height: 245px;
+
+        font-size: 40px;
+        line-height: 42px;
+    }
+
+    .advantages__slogan {
+        margin: 0;
     }
 
     .advantages__list {
         width: 310px;
+        padding-top: 30px;
+    }
+
+    .advantages__item, .advantages__item h3 {
+        text-align: left;
+    }
+
+    .advantages__item {
+        margin-bottom: 40px;
+    }
+
+    .advantages__phone-wrapper {
+        margin-right: 40px;
     }
 
     .advantages__phone {
-        height: 482px;
-        width: 268px;
+        height: 425px;
+        width: 240px;
+        padding: 60px 15px 0 15px;
+
+        background-size: calc(240px + 2*15px) calc(425px + 60px + 70px);
     }
 
     .advantages__effect {
