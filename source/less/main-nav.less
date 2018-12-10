@@ -86,10 +86,6 @@
   }
 }
 
-@media (min-width: @tablet-width) {
-  
-}
-
 @media (min-width: @desktop-width) {
   .main-nav__switch {
     display: none; 
@@ -118,6 +114,9 @@
   }
 
   .main-nav__item a {
+    padding-top: 0;
+    min-height: auto;
+
     border: none;
     background-color: transparent;
 
@@ -129,7 +128,7 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 0;
+      bottom: -10px;
 
       height: 2px;
 

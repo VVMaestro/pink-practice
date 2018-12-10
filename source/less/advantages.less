@@ -1,13 +1,13 @@
 .advantages {
-    padding: 0 20px;
-
-    background-image: linear-gradient(353deg, #f2f2f2 0%, #f2f2f2 75%,
+    background-image: linear-gradient(-5deg, #f2f2f2 0%, #f2f2f2 75%,
      #ffffff 75%, #ffffff 100%);
 }
 
 .advantages__wrapper {
     display: flex;
     flex-direction: column;
+
+    padding: 0 20px;
 }
 
 .advantages__phone {
@@ -29,6 +29,7 @@
 
 .advantages__slogan-wrapper {
     box-sizing: border-box;
+    padding: 0 20px;
     padding-top: 45px;
     min-height: 300px;
 
@@ -57,7 +58,7 @@
 
 .advantages__item h3 {
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
     text-align: center;
     font-size: 18px;
@@ -69,8 +70,8 @@
 
 @media (min-width: @tablet-width) {
     .advantages {
-        background-image: linear-gradient(353deg, #f2f2f2 0%, #f2f2f2 69%,
-     #ffffff 69%, #ffffff 100%);
+        background-image: linear-gradient(-5deg, #f2f2f2 0%, #f2f2f2 75%,
+     #ffffff 75%, #ffffff 100%);
     }
 
     .advantages__wrapper {
@@ -91,8 +92,10 @@
     }
 
     .advantages__list {
+        align-self: flex-end;
+
         width: 310px;
-        padding-top: 30px;
+        margin-bottom: 45px;
     }
 
     .advantages__item, .advantages__item h3 {
@@ -115,35 +118,141 @@
         background-size: calc(240px + 2*15px) calc(425px + 60px + 70px);
     }
 
+    .advantages__effect-back {
+        background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+    }
+
     .advantages__effect {
         display: block;
+
+        padding: 95px 20px 130px 330px;
+        margin: 0 auto;
+        width: 310px;
+    }
+
+    .advantages__research-title {
+        width: 170px;
+
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .advantages__research-link {
+        color: #d22856;
     }
 }
 
 @media (min-width: @desktop-width) {
-    .advantages__pnone-wrapper {
-        display: flex;
-        justify-content: space-around;
+    .advantages {
+        background-image: linear-gradient(-5deg, #f2f2f2 0%, #f2f2f2 73%,
+     #ffffff 73%, #ffffff 100%);
     }
-    
-    .advantages__phone {
-        display: block;
-        height: 305px;
-        width: 186px;
+
+    .advantages__slogan-wrapper {
+        font-size: 50px;
+        line-height: 60px;
     }
 
     .advantages__wrapper {
         flex-direction: column-reverse;
+
+        min-height: 560px;
+    }
+
+    .advantages__phone-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin: 0;
+        width: 940px;
+    }
+    
+    .advantages__img-wrapper {
+        position: relative;
+
+        width: 290px;
+        overflow: hidden;
+        &::after {
+            content: "";
+            
+            display: block;
+
+            position: absolute;
+            bottom: -1px;
+            left: 10px;
+            right: 10px;
+
+            
+            height: 1px;
+            
+            border-radius: 50%; 
+            
+            box-shadow: 0 0 13px 0.5px #000000;
+        }
+    }
+
+    .advantages__phone {
+        display: block;
+        
+        margin-bottom: -38px;
+        padding: 40px 11px 0 11px;
+        height: 298px;
+        width: 169px;
+
+        background-size: calc(169px + 2*11px) calc(298px + 40px + 42px);
+    }
+
+    .advantages__list {
+        display: flex;
+        justify-content: space-between;
+        align-self: auto;
+
+        margin: 0;        
+        margin-top: 55px;
+        width: 940px;
     }
     
     .advantages__item {
-        width: 250px;
-    }
-    
-    .advantages__list {
-        display: flex;
-        justify-content: space-around;
+        box-sizing: border-box;
+        margin: 0;
+        width: 290px;
 
-        width: auto;
+        text-align: center;
+
+        &:nth-child(1) {
+            padding: 0 20px;
+        }
+
+        &:nth-child(2) {
+            padding: 0 30px;
+        }
+
+        &:nth-child(3) {
+            padding: 0 25px;
+        }
+    }
+
+    .advantages__item h3 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .advantages__item span {
+        font-size: 18px;
+    }
+
+    .advantages__effect-back {
+        background-image: none;
+    }
+
+    .advantages__effect {
+        width: 520px;
+        padding: 160px 55px 110px 370px;
+    }
+
+    .advantages__research-title {
+        width: 300px;
     }
 }

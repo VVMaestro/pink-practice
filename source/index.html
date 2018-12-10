@@ -88,60 +88,76 @@
             </li>
           </ul>
           <div class="advantages__phone-wrapper">
-            <img src="img/Iphone-screen-grey.png" alt="Телефон с серым городом" class="advantages__phone">
-            <img src="img/Iphone-screen-pink.png" alt="Телефон с розовым городом" class="advantages__phone">
-            <img src="img/Iphone-screen-smile.png" alt="Телефон с улыбкой" class="advantages__phone advantages__phone--smile">
+            <div class="advantages__img-wrapper">
+              <img src="img/Iphone-screen-grey.png" alt="Телефон с серым городом" class="advantages__phone">
+            </div>
+            <div class="advantages__img-wrapper">
+              <img src="img/Iphone-screen-pink.png" alt="Телефон с розовым городом" class="advantages__phone">
+            </div>
+            <div class="advantages__img-wrapper">
+              <img src="img/Iphone-screen-smile.png" alt="Телефон с улыбкой" class="advantages__phone advantages__phone--smile">
+            </div>
           </div>
         </div>
-        <div class="advantages__effect">
-          <h3 class="advantages__item-title">Эффект на 24 часа!</h3>
-          <p class="advantages__research">
-            Британские учёные провели исследования и доказали, что положительный
-            эффект от использования приложения длится целые сутки!
-          </p>
-          <a class="advantages__research-link" href="#">Узнать больше об исследовании</a>
+        <div class="advantages__effect-back">
+          <div class="advantages__effect">
+            <h3 class="advantages__research-title">Эффект на 24 часа!</h3>
+            <p class="advantages__research">
+              Британские учёные провели исследования и доказали, что положительный
+              эффект от использования приложения длится целые сутки!
+            </p>
+            <a class="advantages__research-link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
       <section class="comments">
         <h2 class="visually-hidden">Комментарии пользователей</h2>
-         <ul class="comments__list site-list">
-           <li class="comments__item">
-             <div class="comments__info">
-               <p class="comments__username">Николай Петров</p>
-               <p class="comments__user-info">25 лет, водитель трамвая</p>
-             </div>
-             <p class="comments__text">
-               &#xab;Это приложение перевернуло мой мир и позволило по-новому взглянуть
-               на привычные серые вещи! А ещё я познакомился со своей будующей
-               женой в комментариях к выложенной фотографии!&#xbb;
-             </p>
-           </li>
-           <li class="comments__item">
-             <div class="comments__info">
-               <p class="comments__username">Василий Пушкин</p>
-               <p class="comments__user-info">34 года, пилот</p>
-             </div>
-             <p class="comments__text">
-                &#xab;Великолепно, замечательно, инновационно!&#xbb;
-              </p>
-           </li>
-           <li class="comments__item">
-             <div class="comments__info">
-               <p class="comments__username">Эмиритариус Ктейн</p>
-               <p class="comments__user-info">29 лет, учёный</p>
-             </div>
-             <p class="comments__text">
-               &#xab;После начала пользования приложением стало
-                действительно легче переносить всё давление реального мира и
-                находить людей с общими взглядами.&#xbb;
-              </p>
-           </li>
-         </ul>
+         <div class="comments__wrapper">
+           <ul class="comments__list site-list comments__list--1-comment">
+             <li class="comments__item">
+               <div class="comments__info">
+                 <p class="comments__username">Николай Петров</p>
+                 <p class="comments__user-info">25 лет, водитель трамвая</p>
+               </div>
+               <p class="comments__text">
+                 &#xab;Это приложение перевернуло мой мир и позволило по-новому взглянуть
+                 на привычные серые вещи! А ещё я познакомился со своей будующей
+                 женой в комментариях к выложенной фотографии!&#xbb;
+               </p>
+             </li>
+             <li class="comments__item">
+               <div class="comments__info">
+                 <p class="comments__username">Василий Пушкин</p>
+                 <p class="comments__user-info">34 года, пилот</p>
+               </div>
+               <p class="comments__text">
+                  &#xab;Великолепно, замечательно, инновационно!&#xbb;
+                </p>
+             </li>
+             <li class="comments__item">
+               <div class="comments__info">
+                 <p class="comments__username">Эмиритариус Ктейн</p>
+                 <p class="comments__user-info">29 лет, учёный</p>
+               </div>
+               <p class="comments__text">
+                 &#xab;После начала пользования приложением стало
+                  действительно легче переносить всё давление реального мира и
+                  находить людей с общими взглядами.&#xbb;
+                </p>
+             </li>
+           </ul>
+         </div>
          <div class="comments__toggle-box">
-           <button class="comments__toggle" type="button"></button>
-           <button class="comments__toggle" type="button"></button>
-           <button class="comments__toggle" type="button"></button>
+           <button class="comments__toggle comments__toggle--current" type="button">
+             <span class="visually-hidden">1 комментарий</span>
+          </button>
+           <button class="comments__toggle" type="button">
+             <span class="visually-hidden">2 комментарий</span>
+          </button>
+           <button class="comments__toggle" type="button">
+             <span class="visually-hidden">3 комментарий</span>
+          </button>
          </div>
          <button class="comments__prev" type="button"></button>
          <button class="comments__next" type="button"></button>
