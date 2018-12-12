@@ -1,0 +1,42 @@
+.toggle__box {
+    position: absolute;
+    left: 50%;
+    bottom: 42px;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 64px;
+    margin-left: calc(-64px/2);
+}
+
+.toggle {
+    padding: 0;
+    margin: 0;
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+    border: none;
+    
+    background-color: fade(#283645, 30);
+
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+        background-color: fade(#283645, 60);
+    }
+
+    &:focus {
+        background-color: fade(#283645, 60);
+    }
+
+    &:active {
+        background-color: fade(#283645, 10);
+    }
+
+    &--current {
+        box-shadow: 0 0 0 3px #000000;
+    }
+}

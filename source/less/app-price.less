@@ -28,10 +28,23 @@
     transition-property: transform;
     transition-duration: 2s;
 
-    transform: translateX(0);
+
+    &--1-column {
+        transform: translateX(0);
+    }
+
+    &--2-column {
+        transform: translateX(-33.4%);
+    }
+
+    &--3-column {
+        transform: translateX(-66.6%);
+    }
 }
 
 .app-price__h-table-cell {
+    position: relative;
+
     padding: 20px 0;
 
     text-align: center;
@@ -40,11 +53,30 @@
     border: 2px solid #e5e5e5;
     background-color: #283645;
 
+    overflow: hidden;
+
     &--empty {
         display: none;
 
         background-color: transparent;
         border: none;
+    }
+
+    &--hit::before {
+        content: "Хит";
+
+        position: absolute;
+        left: -25px;
+        top: 10px;
+
+        width: 100px;
+        height: 25px;
+
+        text-transform: uppercase;
+
+        background-color: red;
+
+        transform: rotate(-45deg);
     }
 }
 
