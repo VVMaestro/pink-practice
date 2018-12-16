@@ -7,7 +7,7 @@
   <link type="text/css" rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
-    <header class="page-header main-nav--closed">      
+    <header class="page-header main-nav--closed">
       <div class="page-header__desktop">
         <div class="main-nav__wrapper">
           <div class="page-header__wrapper">
@@ -89,13 +89,19 @@
           </ul>
           <div class="advantages__phone-wrapper">
             <div class="advantages__img-wrapper">
-              <img src="img/Iphone-screen-grey.png" alt="Телефон с серым городом" class="advantages__phone">
+              <img src="img/Iphone-screen-grey.png" 
+              srcset="img/Iphone-screen-grey@x2.png 2x" 
+              alt="Телефон с серым городом" class="advantages__phone">
             </div>
             <div class="advantages__img-wrapper">
-              <img src="img/Iphone-screen-pink.png" alt="Телефон с розовым городом" class="advantages__phone">
+              <img src="img/Iphone-screen-pink.png" 
+              srcset="img/Iphone-screen-pink@x2.png 2x" 
+              alt="Телефон с розовым городом" class="advantages__phone">
             </div>
             <div class="advantages__img-wrapper">
-              <img src="img/Iphone-screen-smile.png" alt="Телефон с улыбкой" class="advantages__phone advantages__phone--smile">
+              <img src="img/Iphone-screen-smile.png" 
+              srcset="img/Iphone-screen-smile@x2.png 2x" 
+              alt="Телефон с улыбкой" class="advantages__phone advantages__phone--smile">
             </div>
           </div>
         </div>
@@ -148,14 +154,14 @@
              </li>
            </ul>
          </div>
-         <div class="comments__toggle-box toggle__box">
-           <button class="comments__toggle comments__toggle--current" type="button">
+         <div class="toggle__box comments__toggle-box">
+           <button class="toggle toggle--current" type="button">
              <span class="visually-hidden">1 комментарий</span>
           </button>
-           <button class="comments__toggle" type="button">
+           <button class="toggle" type="button">
              <span class="visually-hidden">2 комментарий</span>
           </button>
-           <button class="comments__toggle" type="button">
+           <button class="toggle" type="button">
              <span class="visually-hidden">3 комментарий</span>
           </button>
          </div>
@@ -237,6 +243,17 @@
             </table>
           </div>
         </div>
+        <div class="toggle__box app-price__toggle-box">
+          <button class="toggle" type="button">
+            <span class="visually-hidden">1 комментарий</span>
+          </button>
+          <button class="toggle toggle--current" type="button">
+            <span class="visually-hidden">2 комментарий</span>
+          </button>
+          <button class="toggle" type="button">
+            <span class="visually-hidden">3 комментарий</span>
+          </button>
+        </div>
       </section>
 
       <section class="contacts">
@@ -247,37 +264,36 @@
         </p>
         <div class="contacts__wrapper">
           <label class="contacts__label">
-            <p>Звоните</p>
+            <p>Звоните:</p>
             <a class="contacts__link" href="#">+7 (812) 555-66-66</a>
           </label>
           <label class="contacts__label">
-            <p>Пишите</p>
+            <p>Пишите:</p>
             <a class="contacts__link" href="#">mail@htmlacademy.ru</a>
           </label>
           <label class="contacts__label">
-            <p>Приезжайте в гости</p>
-            <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+            <p>Приезжайте в гости:</p>
+            <a class="contacts__link" href="#">ул. Большая<br>Конюшенная, 19/8</a>
           </label>
         </div>
       </section>
 
       <section class="map">
-        <span class="map__marker"></span>
+        <iframe class="map__gmap" src="https://yandex.ru/map-widget/v1/-/CBFLNVgXpD" frameborder="0" allowfullscreen="true"></iframe>
       </section>
 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="logo logo--footer" alt="Логотип Pink"/>
+        <include src="build/img/logotype-tablet-footer.svg"></include>
         <div class="social page-footer__social">
-          <a href="#" class="social__link"><img src="" alt="Иконка twitter" class="social__image"></a>
-          <a href="#" class="social__link"><img src="" alt="Иконка facebook" class="social__image"></a>
-          <a href="#" class="social__link"><img src="" alt="Иконка YouTube" class="social__image"></a>
+          <a href="#" class="social__link"><img src="img/twitter.svg" width="18px" height="14px" alt="Иконка twitter" class="social__image"></a>
+          <a href="#" class="social__link"><img src="img/facebook.svg" width="9px" height="18px" alt="Иконка facebook" class="social__image"></a>
+          <a href="#" class="social__link"><img src="img/youtube.svg" width="15px" height="14px" alt="Иконка YouTube" class="social__image"></a>
         </div>
-        <label class="academy page-footer__academy">
-          <p>Разработанно</p>
-          <a class="academy__link"><img class="academy__logo" alt="Логотип HTML Academy" /></a>
+        <label class="academy page-footer__academy">          
+          <a href="#" class="academy__link"><span>Разработанно</span><include src="build/img/htmlacademy.svg"></include></a>
         </label>
       </div>
     </footer>

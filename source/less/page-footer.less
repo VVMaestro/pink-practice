@@ -5,15 +5,23 @@
 @media (min-width: @tablet-width) {
     .page-footer {
         display: block;
-        min-height: 127px;
+        padding: 0 20px;
     }
 
     .page-footer__wrapper {
         display: flex;
+        
         justify-content: space-between;
+        align-items: center;
+
+        box-sizing: border-box;
         margin: 0 auto;
+        min-height: 127px;
         width: 620px;
-        outline: 2px solid grey;
+    }
+
+    .page-footer__wrapper > svg {
+        margin-top: -20px;
     }
 }
 
@@ -23,6 +31,7 @@
     }
 
     .page-footer__wrapper {
-        width: 960px;
+        width: 940px;
+        min-height: 200px;
     }
 }

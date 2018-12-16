@@ -1,5 +1,5 @@
 .contacts {
-    padding: 0 20px;
+    padding: 45px 20px 35px 20px;
 }
 
 .contacts__wrapper {
@@ -7,30 +7,106 @@
     flex-direction: column;
 }
 
+.contacts__title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 30px;
+}
+
+.contacts__label {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contacts__label p {
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.contacts__link {
+    color: #d22856;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 100;
+    text-decoration: none;
+
+    outline: none;  
+    &:hover {
+        color: #283645;
+        text-decoration: underline;
+    }
+
+    &:focus {
+        color: #283645;
+        text-decoration: underline;
+    }
+
+    &:active {
+        opacity: 0.3;
+        text-decoration: none;
+    }
+}
+
 @media (min-width: @tablet-width) {
     .contacts__wrapper {
+        margin: 0 auto;
         width: 620px;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        & :first-child {
-            margin-right: 20px;
-        }
+        justify-content: center;        
     }
 
     .contacts__label {
         width: 300px;
-        outline: 1px solid red;
+
+        &:first-child {
+            margin-right: 20px;
+        }
+    }   
+
+    .contacts__title {
+        margin-bottom: 40px;
+
+        font-size: 40px;
+        line-height: 42px;
     }
 }
 
 @media (min-width: @desktop-width) {
+    .contacts {
+        padding-top: 70px;
+    }
+
     .contacts__wrapper {
         flex-wrap: nowrap;
         justify-content: space-between;
-        width: 940px;
-        & :first-child {
-            margin-right: 0;
+        width: 890px;
+    }
+
+    .contacts__label {
+        width: auto;
+
+        &:nth-child(1) {
+            order: 1;
         }
+
+        &:nth-child(2) {
+            order: 3;
+        }
+
+        &:nth-child(3) {
+            order: 2;
+        }
+    }
+
+    .contacts__label p {
+        margin-bottom: 25px;
     }
 }
