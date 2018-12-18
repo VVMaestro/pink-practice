@@ -20,8 +20,24 @@
         width: 620px;
     }
 
-    .page-footer__wrapper > svg {
+    .page-footer__logo-link {
         margin-top: -20px;
+
+        &:hover path {
+            fill: #d22856;
+        }
+
+        &:focus path {
+            fill: #d22856;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .page-footer__desktop-logotype {
+        display: none;
     }
 }
 
@@ -33,5 +49,13 @@
     .page-footer__wrapper {
         width: 940px;
         min-height: 200px;
+    }
+
+    .page-footer__desktop-logotype {
+        display: inline-block;
+    }
+
+    .page-footer__tablet-logotype {
+        display: none;
     }
 }

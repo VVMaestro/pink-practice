@@ -19,12 +19,25 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.page-header__logo-link:hover path{
-  fill: #d22856;
+.page-header__logo-link {
+  width: 74px;
+  height: 23px;
+  overflow: hidden;
+
+  outline: none;
+
+    &:hover path{
+      fill: #d22856;
+  }
+
+    &:focus path{
+      fill: #d22856;
+  }
 }
 
-.page-header__logo-link:focus path{
-  fill: #d22856;
+.page-header__logo-link svg {
+  width: 146px;
+  height: 40px;
 }
 
 .page-header__desktop-svg {
@@ -52,6 +65,11 @@
 @media (min-width: @tablet-width) {
   .page-header__wrapper {
     min-height: 110px;
+  }
+
+  .page-header__logo-link {
+    width: auto;
+    height: auto;
   }
 
   .page-header__tablet-svg {
@@ -91,7 +109,7 @@
   }
 
   .page-header__desktop-svg {
-    display: inline;
+    display: inline-block;
   }
 
   .page-header__wrapper {
