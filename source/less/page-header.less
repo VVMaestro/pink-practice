@@ -1,6 +1,6 @@
 .page-header {  
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 .page-header__wrapper {
@@ -96,8 +96,24 @@
       auto 645px,
       225%;
     background-position: 
-      right bottom,
+      right 50% bottom,
       center top 75%;
+      
+      
+    &--pages {
+      box-sizing: border-box;
+      min-height: 0;
+
+      background-color: #1d2631;
+      background-image: 
+        url("../img/page-header-back.png");
+      background-repeat: 
+        no-repeat;
+      background-size:
+        200%;
+      background-position:
+        center top 55%;
+    }
   }
 
   .page-header__mobile-svg {

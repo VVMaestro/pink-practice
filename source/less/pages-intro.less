@@ -1,0 +1,70 @@
+.pages-intro {
+    box-sizing: border-box;
+    padding-top: 100px;
+    min-height: 238px;
+    
+    background-color: #1d2631;
+    background-image: url("../img/page-header-back.png");
+    background-size: auto 550px;
+    background-position: center bottom -250px;
+    background-repeat: no-repeat;
+}
+
+.pages-intro__title {
+    margin: 0 auto;
+    width: 280px;
+
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 28px;
+    text-align: center;
+}
+
+@media (max-width: @only-mobile-width) {
+    .main-nav--opened {
+        .pages-intro {
+            margin-top: -64px;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) and (max-width: @only-portable-width) {
+    .main-nav--opened {
+        .pages-intro {
+            margin-top: -110px;
+        }
+    }
+}
+
+@media (min-width: @tablet-width) {
+    .pages-intro {
+        padding-top: 180px;
+        min-height: 440px;
+
+        background-color: none;
+        background-size: auto;
+        background-position: center bottom -300px;
+    }
+
+    .pages-intro__title {        
+        width: 520px;
+
+        font-size: 50px;
+        line-height: 52px;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .pages-intro {
+        min-height: 280px;
+        padding-top: 65px;
+
+        background-image: none;      
+        background-color: transparent;
+    }
+
+    .pages-intro__title {        
+        width: 760px;
+    }
+}

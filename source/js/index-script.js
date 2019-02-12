@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
             commentsToggles[indexI].classList.add("toggle--current");
         });
     };
-    //функция для настройки событий для цтаблицы цен
+    //функция для настройки событий для таблицы цен
     function setAppPriceToggles(indexI) {
         appPriceToggles[indexI].addEventListener("click", function () {
             for (j = 0; j < commentsToggles.length; j++) {

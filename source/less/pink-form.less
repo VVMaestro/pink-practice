@@ -1,0 +1,262 @@
+.pink-form__container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pink-form__title {
+    padding-top: 45px; 
+    padding-bottom: 45px;
+    width: 280px;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.pink-form__fio {
+    padding-bottom: 20px;
+    width: 280px;
+}
+
+.pink-form__label-text {
+    margin: 0 0 10px 0;
+    padding-left: 22px;
+
+    color: #d22856;
+    text-transform: uppercase;
+}
+
+.pink-form__tinput {
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+
+    font-size: 18px;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+
+    outline: none;
+
+    transition: border-color 0.2s ease-in-out 0s;
+
+    &::-webkit-input-placeholder {
+        color: #283645;
+    }
+
+    &::-moz-placeholder {
+        color: #283645;
+    }
+
+    &:-moz-placeholder {
+        color: #283645;
+    }
+
+    &:-ms-input-placeholder {
+        color: #283645;
+    }
+
+    &:hover, &:focus {
+        border-color: #283645;
+    }
+    &:active {
+        border-color: #d22856;
+    }
+}
+
+.pink-form__achivements {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    background-color: #f2f2f2;
+}
+
+.pink-form__achivements label {
+    display: block;    
+}
+
+.pink-form__field-title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+    width: 230px;
+
+    color: #d22856;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pink-form__fieldset {
+    margin: 0 auto;
+    padding: 0;
+    width: 280px;
+
+    border: none;
+}
+
+.pink-form__checkbox-custom {
+    display: inline-block;
+    position: relative;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 2px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+
+    transform: translateY(12px);
+
+    transition-property: border-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.pink-form__checkbox + .pink-form__checkbox-custom::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    left: calc(50% - 22px/2);
+    top: calc(50% - 16px/2);
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+
+    opacity: 0;
+
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out; 
+}
+
+.pink-form__checkbox:checked + .pink-form__checkbox-custom::before {
+    opacity: 1;
+}
+
+.pink-form__checkbox:hover + .pink-form__checkbox-custom,
+.pink-form__checkbox:focus +.pink-form__checkbox-custom {
+    border-color: #283645;
+}
+
+.pink-form__checkbox:active+.pink-form__checkbox-custom {
+    border-color: #d22856;
+}
+
+.pink-form__flags-text {
+    display: inline-block;
+
+    margin-left: 31px;
+
+    font-size: 18px;
+    line-height: 30px;
+}
+
+// телефон и почта
+.pink-form__contacts {
+    padding-bottom: 20px;
+    width: 280px;
+}
+
+//Приложение
+.pink-form__app {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    background-color: #f2f2f2;
+}
+
+.pink-form__app label {
+    display: block;
+}
+
+.pink-form__radio + .pink-form__custom-radio {
+    display: inline-block;
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+
+    transform: translateY(13px);
+
+    transition: border-color 0.2s ease-in-out 0s;
+}
+
+.pink-form__radio + .pink-form__custom-radio:before {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    left: calc(50% - 8px);
+    top: calc(50% - 8px);
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+    background-color: #d22856;
+
+    opacity: 0;
+}
+
+.pink-form__radio:checked + .pink-form__custom-radio:before {
+    opacity: 1;
+}
+
+.pink-form__radio:hover + .pink-form__custom-radio,
+.pink-form__radio:focus + .pink-form__custom-radio {
+    border-color: #283645;
+}
+
+.pink-form__radio:active + .pink-form__custom-radio {
+    border-color: #d22856;
+}
+
+.pink-form__description {
+    padding-bottom: 20px;
+    width: 280px;
+}
+
+.pink-form__textarea {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
+
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 30px;
+    
+    border: 2px solid #e5e5e5;
+    
+    resize: none;
+    &::-webkit-input-placeholder {
+        color: #283645;
+    }
+
+    &::-moz-placeholder {
+        color: #283645;
+    }
+
+    &:-moz-placeholder {
+        color: #283645;
+    }
+
+    &:-ms-input-placeholder {
+        color: #283645;
+    }
+}
