@@ -124,7 +124,7 @@
 					<ul class="main-nav__list site-list">
 						<li class="main-nav__item"><a href="index.html">Главная</a></li>
 						<li class="main-nav__item"><a href="#">Фотографии</a></li>
-						<li class="main-nav__item"><a href="#">Конкурс</a></li>
+						<li class="main-nav__item"><a>Конкурс</a></li>
 						<li class="main-nav__item"><a href="#">HTML Academy</a></li>
 					</ul>
 				</nav>
@@ -139,99 +139,126 @@
 		<p class="pink-form__title pink-form__container">
 			Поделитесь своей историей и получите шанс выиграть ценный 
 			приз &mdash; 1000 миль на вашу бонусную карту!
+			<span>Пожалуйста, заполните форму ниже:</span>
 		</p>
 		<form class="pink-form"
 		method="POST">
-			<div class="pink-form__fio pink-form__container">
-				<label>
-					<p class="pink-form__label-text">
-						Фамилия:
-					</p>
-					<input class="pink-form__tinput" type="text" required placeholder="Укажите фамилию *" name="second-name">
-				</label>
-				<label>
-					<p class="pink-form__label-text">
-						Имя:
-					</p>
-					<input class="pink-form__tinput" type="text" required placeholder="Введите ваше имя *" name="first-name">
-				</label>
-				<label>
-					<p class="pink-form__label-text">
-						Отчество:
-					</p>
-					<input class="pink-form__tinput" type="text" placeholder="Ну и отчество тоже" name="fathers-name">
-				</label>
+			<div class="pink-form__wrapper">
+				<div class="pink-form__fio">
+					<div class="pink-form__container pink-form__fio-wrapper">
+						<label class="pink-form__label">
+							<p class="pink-form__label-text">
+								Фамилия:
+							</p>
+							<input class="pink-form__tinput" type="text" required placeholder="Укажите фамилию *" name="second-name">
+						</label>
+						<label class="pink-form__label">
+							<p class="pink-form__label-text">
+								Имя:
+							</p>
+							<input class="pink-form__tinput" type="text" required placeholder="Введите ваше имя *" name="first-name">
+						</label>
+						<label class="pink-form__label">
+							<p class="pink-form__label-text">
+								Отчество:
+							</p>
+							<input class="pink-form__tinput" type="text" placeholder="Ну и отчество тоже" name="fathers-name">
+						</label>
+					</div>
+				</div>
+				<div class="pink-form__achivements">
+					<div class="pink-form__container pink-form__achivements-wrapper">
+						<fieldset class="pink-form__fieldset">
+							<legend class="pink-form__field-title">Ваши безбашенные достижения в путешествии</legend>
+							<label>
+								<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="shark-selfie">
+								<span class="pink-form__checkbox-custom"></span>
+								<span class="pink-form__flags-text">Сделал селфи с акулой</span>
+							</label>
+							<label>
+								<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="burned">
+								<span class="pink-form__checkbox-custom"></span>
+								<span class="pink-form__flags-text">Обгорел на пляже</span>
+							</label>
+							<label>
+								<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="chuck">
+								<span class="pink-form__checkbox-custom"></span>
+								<span class="pink-form__flags-text">Видел Чака Нориса</span>
+							</label>
+							<label>
+								<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="souvenirs">
+								<span class="pink-form__checkbox-custom"></span>
+								<span class="pink-form__flags-text">Накупил сувениров</span>
+							</label>
+							<label>
+								<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="tower">
+								<span class="pink-form__checkbox-custom"></span>
+								<span class="pink-form__flags-text">Удержал башню</span>
+							</label>
+							<label>
+								<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="hotel-destroy">
+								<span class="pink-form__checkbox-custom"></span>
+								<span class="pink-form__flags-text">Разгромил отель</span>
+							</label>
+						</fieldset>
+					</div>
+				</div>				
+				<div class="pink-form__contacts">
+					<div class="pink-form__container pink-form__contacts-wrapper">
+						<fieldset class="pink-form__fieldset">
+							<legend class="pink-form__field-title">Контактная информация</legend>
+							<label class="pink-form__label">
+								<p class="pink-form__label-text pink-form__label-text--up">Номер телефона</p>
+								<div class="pink-form__icon pink-form__icon--tel">
+									<input class="pink-form__tinput" type="tel" pattern="\d*" placeholder="Номер, пожалуйста" name="phone-number">
+								</div>
+								<p class="pink-form__label-text pink-form__label-text--bot">Номер телефона</p>
+							</label>
+							<label class="pink-form__label">
+								<p class="pink-form__label-text pink-form__label-text--up">Адрес почты</p>
+								<div class="pink-form__icon pink-form__icon--mail">
+									<input class="pink-form__tinput" type="email" required placeholder="Введите почту *" name="email">
+								</div>
+								<p class="pink-form__label-text pink-form__label-text--bot">Адрес почты</p>
+							</label>
+						</fieldset>
+					</div>		
+				</div>
+				<div class="pink-form__app">
+					<div class="pink-form__container pink-form__app-wrapper">
+						<fieldset class="pink-form__fieldset">
+							<legend class="pink-form__field-title">С каким приложением вы путешествовали</legend>
+							<label>
+								<input class="pink-form__radio visually-hidden" type="radio" name="app" value="iOS" checked>
+								<span class="pink-form__custom-radio"></span>
+								<span class="pink-form__flags-text">Pink для iOS</span>
+							</label>
+							<label>
+								<input class="pink-form__radio visually-hidden" type="radio" name="app" value="Android">
+								<span class="pink-form__custom-radio"></span>
+								<span class="pink-form__flags-text">Pink на Android</span>
+							</label>
+							<label>
+								<input class="pink-form__radio visually-hidden" type="radio" name="app" value="Windows">
+								<span class="pink-form__custom-radio"></span>
+								<span class="pink-form__flags-text">Windows Phone</span>
+							</label>
+						</fieldset>
+					</div>
+				</div>
+				<div class="pink-form__description">
+					<div class="pink-form__container pink-form__description-wrapper">
+						<fieldset class="pink-form__fieldset">
+							<legend class="pink-form__field-title">Опишите свои эмоции</legend>
+							<textarea class="pink-form__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+						</fieldset>
+					</div>
+				</div>
 			</div>
-			<div class="pink-form__achivements pink-form__container">
-				<fieldset class="pink-form__fieldset">
-					<legend class="pink-form__field-title">Ваши безбашенные достижения в путешествии</legend>
-					<label>
-						<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="shark-selfie">
-						<span class="pink-form__checkbox-custom"></span>
-						<span class="pink-form__flags-text">Сделал селфи с акулой</span>
-					</label>
-					<label>
-						<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="burned">
-						<span class="pink-form__checkbox-custom"></span>
-						<span class="pink-form__flags-text">Обгорел на пляже</span>
-					</label>
-					<label>
-						<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="chuck">
-						<span class="pink-form__checkbox-custom"></span>
-						<span class="pink-form__flags-text">Видел Чака Нориса</span>
-					</label>
-					<label>
-						<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="souvenirs">
-						<span class="pink-form__checkbox-custom"></span>
-						<span class="pink-form__flags-text">Накупил сувениров</span>
-					</label>
-					<label>
-						<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="tower">
-						<span class="pink-form__checkbox-custom"></span>
-						<span class="pink-form__flags-text">Удержал башню</span>
-					</label>
-					<label>
-						<input class="pink-form__checkbox visually-hidden" type="checkbox" name="ahiviments" value="hotel-destroy">
-						<span class="pink-form__checkbox-custom"></span>
-						<span class="pink-form__flags-text">Разгромил отель</span>
-					</label>
-				</fieldset>
-			</div>				
-			<div class="pink-form__contacts pink-form__container">
-				<label>
-					<p class="pink-form__label-text">Номер телефона</p>
-					<input class="pink-form__tinput" type="tel" pattern="\d*" placeholder="Номер, пожалуйста" name="phone-number">
-				</label>
-				<label>
-					<p class="pink-form__label-text">Адрес почты</p>
-					<input class="pink-form__tinput" type="email" required placeholder="Введите почту *" name="email">
-				</label>				
+			<div class="pink-form__container pink-form__button-wrapper">
+				<input class="button button--submit" type="submit" value="Отправить форму">
+				<span class="pink-form__addinfo"><span class="pink-form__addinfo--red">*</span> - обязательные поля</span>
 			</div>
-			<div class="pink-form__app pink-form__container">
-				<fieldset class="pink-form__fieldset">
-					<legend class="pink-form__field-title">С каким приложением вы путешествовали</legend>
-					<label>
-						<input class="pink-form__radio visually-hidden" type="radio" name="app" value="iOS">
-						<span class="pink-form__custom-radio"></span>
-						<span class="pink-form__flags-text">Pink для iOS</span>
-					</label>
-					<label>
-						<input class="pink-form__radio visually-hidden" type="radio" name="app" value="Android">
-						<span class="pink-form__custom-radio"></span>
-						<span class="pink-form__flags-text">Pink на Android</span>
-					</label>
-					<label>
-						<input class="pink-form__radio visually-hidden" type="radio" name="app" value="Windows">
-						<span class="pink-form__custom-radio"></span>
-						<span class="pink-form__flags-text">Windows Phone</span>
-					</label>
-				</fieldset>
-			</div>
-			<div class="pink-form__description pink-form__container">
-				<p class="pink-form__field-title">Опишите свои эмоции</p>
-				<textarea class="pink-form__textarea" name="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-			</div>
-			<input class="button button--submit" type="submit" value="Отправить форму">
 		</form>
 	</main>
 

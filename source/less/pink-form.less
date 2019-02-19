@@ -1,3 +1,8 @@
+.pink-form__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
 .pink-form__container {
     margin: 0 auto;
     padding: 0 20px;
@@ -12,17 +17,28 @@
     line-height: 30px;
 }
 
+.pink-form__title span {
+    display: none;
+}
+
 .pink-form__fio {
-    padding-bottom: 20px;
+    padding-bottom: 20px;    
+}
+
+.pink-form__fio-wrapper {
     width: 280px;
 }
 
 .pink-form__label-text {
-    margin: 0 0 10px 0;
+    margin: 0;
     padding-left: 22px;
 
     color: #d22856;
     text-transform: uppercase;
+}
+
+.pink-form__icon {
+    position: relative;
 }
 
 .pink-form__tinput {
@@ -40,6 +56,7 @@
     outline: none;
 
     transition: border-color 0.2s ease-in-out 0s;
+    
 
     &::-webkit-input-placeholder {
         color: #283645;
@@ -65,12 +82,20 @@
     }
 }
 
+.pink-form__label:last-child .pink-form__tinput {
+    margin-bottom: 0;
+}
+
 .pink-form__achivements {
     padding-top: 35px;
     padding-bottom: 40px;
     margin-bottom: 40px;
 
     background-color: #f2f2f2;
+}
+
+.pink-form__achivements-wrapper {
+    width: 280px;
 }
 
 .pink-form__achivements label {
@@ -91,7 +116,6 @@
 .pink-form__fieldset {
     margin: 0 auto;
     padding: 0;
-    width: 280px;
 
     border: none;
 }
@@ -143,11 +167,11 @@
 }
 
 .pink-form__checkbox:hover + .pink-form__checkbox-custom,
-.pink-form__checkbox:focus +.pink-form__checkbox-custom {
+.pink-form__checkbox:focus + .pink-form__checkbox-custom {
     border-color: #283645;
 }
 
-.pink-form__checkbox:active+.pink-form__checkbox-custom {
+.pink-form__checkbox:active + .pink-form__checkbox-custom {
     border-color: #d22856;
 }
 
@@ -163,7 +187,18 @@
 // телефон и почта
 .pink-form__contacts {
     padding-bottom: 20px;
+}
+
+.pink-form__contacts-wrapper {
     width: 280px;
+}
+
+.pink-form__contacts .pink-form__field-title {
+    display: none;
+}
+
+.pink-form__contacts .pink-form__label-text--bot {
+    display: none;
 }
 
 //Приложение
@@ -173,6 +208,10 @@
     margin-bottom: 40px;
 
     background-color: #f2f2f2;
+}
+
+.pink-form__app-wrapper {
+    width: 280px;
 }
 
 .pink-form__app label {
@@ -227,7 +266,10 @@
 }
 
 .pink-form__description {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.pink-form__description-wrapper {
     width: 280px;
 }
 
@@ -258,5 +300,179 @@
 
     &:-ms-input-placeholder {
         color: #283645;
+    }
+}
+
+.pink-form__button-wrapper {    
+    width: 280px;
+}
+
+.pink-form__addinfo {
+    display: none;
+}
+
+@media (min-width: @tablet-width) {
+    .pink-form {
+        margin-bottom: 60px;
+    }
+
+    .pink-form__fio {
+        order: 0;
+    }
+
+    .pink-form__app {
+        order: 1;
+    }
+
+    .pink-form__contacts {
+        order: 2;
+    }
+
+    .pink-form__achivements {
+        order: 3;
+    }
+
+    .pink-form__description {
+        order: 4;
+    }
+
+    .pink-form__app, 
+    .pink-form__achivements {
+        background-color: #ffffff;
+    }
+
+    .pink-form__title {
+        width: 500px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .pink-form__title span {
+        display: inline;
+    }
+
+    .pink-form__fio-wrapper,
+    .pink-form__achivements-wrapper,
+    .pink-form__contacts-wrapper,
+    .pink-form__app-wrapper,
+    .pink-form__description-wrapper,
+    .pink-form__button-wrapper {
+        width: 620px;
+    }
+
+    .pink-form__button-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pink-form__fio label {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 20px;      
+    }
+
+    .pink-form__fio .pink-form__label-text {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .pink-form__fio .pink-form__tinput {
+        margin-bottom: 0;
+    }
+
+    .pink-form__achivements {
+        padding-bottom: 0;
+    }
+
+    .pink-form__app {
+        padding-bottom: 0;
+    }
+
+    .pink-form__fieldset {
+        box-sizing: border-box;
+        padding: 30px 60px 50px 60px;
+        width: 100%;
+
+        border: 2px solid #e5e5e5;
+    }
+
+    .pink-form__field-title {
+        margin-bottom: 0;
+        padding: 0 30px;
+        width: auto;
+    }
+
+    .pink-form__contacts .pink-form__field-title {
+        display: block;
+    }
+
+    .pink-form__contacts .pink-form__label-text--bot {
+        display: block;
+        margin-bottom: 35px;
+    }
+
+    .pink-form__contacts label:last-child .pink-form__label-text--bot {
+        margin-bottom: 0;
+    }
+
+    .pink-form__contacts .pink-form__label-text--up {
+        display: none;
+    }
+
+    .pink-form__contacts .pink-form__tinput {
+        margin-bottom: 15px;
+        padding-right: 60px;
+    }
+
+    .pink-form__contacts label:last-child .pink-form__tinput {
+        margin-bottom: 15px;
+    }
+
+    .pink-form__description {
+        margin-bottom: 67px;
+    }
+
+    .pink-form__contacts .pink-form__fieldset,
+    .pink-form__description .pink-form__fieldset {
+        padding-bottom: 30px;
+    }
+
+    .pink-form__contacts .pink-form__icon::before {
+        content: "";
+
+        display: block;
+        position: absolute;
+
+        right: 2px;
+        top: 2px;
+
+        width: 56px;
+        height: 56px;
+
+        background-color: #e5e5e5;
+        background-repeat: no-repeat;
+        background-position: center;
+               
+    }
+
+    .pink-form__icon--tel::before {
+        background-image: url("../img/phone.svg");
+        background-size: 20px 19px;
+    }
+
+    .pink-form__icon--mail::before {
+        background-image: url("../img/mail.svg");
+        background-size: 18px 13px;
+    }
+
+    .pink-form__addinfo {
+        display: block;
+        text-transform: uppercase;
+
+        &--red {
+            color: #d22856;
+        }
     }
 }

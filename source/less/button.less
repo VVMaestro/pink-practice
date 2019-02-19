@@ -1,7 +1,6 @@
 .button {
     display: block;
-
-    margin: 0 auto;
+    
     width: 280px;
     min-height: 65px;
 
@@ -21,5 +20,15 @@
     }
     &:active {
         color: fade(#ffffff, 30%);
+    }
+
+    &--submit {
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: @tablet-width) {
+    .button--submit {
+        margin: 0;
     }
 }
